@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "新建配置文件",
+    "Projects": [
+      {
+        "Path": "samples\\Sample.WebGateway\\Sample.WebGateway.csproj",
+        "Action": "Start",
+        "DebugTarget": "Sample.WebGateway"
+      },
+      {
+        "Path": "samples\\Sample.BlazorWasm\\Sample.BlazorWasm.csproj",
+        "Action": "Start",
+        "DebugTarget": "Sample.BlazorWasm"
+      }
+    ]
+  }
+]

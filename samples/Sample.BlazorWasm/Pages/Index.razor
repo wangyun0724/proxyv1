@@ -1,0 +1,17 @@
+
+@page "/"
+@inject ITestService S
+
+<button @onclick="Load">Call</button>
+
+<ul>
+    @foreach(var i in data){<li>@i.Name</li>}
+</ul>
+
+@code{
+
+    public List<TestDto> data { get; set; } = new();
+    public async Task Load(){
+        data = await S.PageAsync(new(1));
+    }
+}
